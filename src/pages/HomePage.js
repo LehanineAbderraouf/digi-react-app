@@ -13,7 +13,7 @@ const HomePage = () => {
 
   useEffect(() => {
     // Fetch data from the API
-    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=10')
+    axios.get('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&count=15')
       .then(response => {
         setElements(response.data);
         setSortedElements(response.data); // Initially no sorting/filtering
